@@ -12,6 +12,7 @@
 ### Corpus Statistics
 
 ### How to use this repository?
+All subfolders containing transcriptions are in zip archives with the password `MaiNLP` so as to prevent potential inclusion in web-scraped datasets (cf. [Jacovi et al., 2023](https://aclanthology.org/2023.emnlp-main.308/)).
 
 ### Paper
 If you use the data and/or code in this repository, please cite the following:
