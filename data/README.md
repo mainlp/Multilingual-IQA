@@ -1,63 +1,50 @@
 For the full data statements, please refer to our paper.
 
-InQA+ Data Statement
+# InQA+ Data Statement
 Data Statement for InQA+ following Bender and Friedman (2018):
 
-A. Curation Rationale
-InQA+ is intended to be used as a multi-lingual evaluation dataset for the Indirect Question Answering task. We collect and translate extracted question-answer pairs from the opensubtitles v2018 (Lison and Tidemann, 2016) corpus that contains data from http://www.opensubtitles.org. It serves as a high-quality, hand-labelled test data resource.
+### A. Curation Rationale
+This dataset extends the work of [Müller et al. (2024)](https://aclanthology.org/2024.lrec-main.791/) and adds a new Indirect Question Answering (IQA) resource. It contains 438 indirect question-answers per language in English, Standard German and Bavarian, a German dialect. It serves as an evaluation dataset for IQA. We use data from the opensubtitles v2018 corpus [(Lison and Tiedemann, 2016](https://aclanthology.org/L16-1147/). The subtitles stem from the website [opensubtitles.org](http://www.opensubtitles.org/).
 
-B. Language Variety
-InQA+ is available in three languages that we provide together with their ISO 639 language codes:
-    - English (EN)
-    - German (DE)
-    - Bavarian (BAR)
+The dataset consists of questions and indirect answers from movie scripts with numeric labels indicating the polarity of the indirect answers. They are separated by tabspaces with one question-answer pair and label per line.
 
-C. Speaker Demographic
-The data stems from subtitles of undisclosed movies, which makes the origin unknown. The Bavarian translation stems from a native speaker of the Central Bavarian dialect.
-
-D. Annotator Demographic
-The annotations for all languages were carried out by a native speaker of the Bavarian dialect within the age range of 25-64 years who lives in the southern region of Bavaria in Germany. The annotator has a Bachelor's degree in Computational Linguistics.
-
-E. Speech Situation
-The data stems from subtitles of undisclosed movies, which does not allow the extraction of more information beyond the movie genre and release year. We assume that the speech was scripted by professional screen writers.
-
-F. Text Characteristics
+#### Labels
 The data is annotated with labels that denote the polarity of the indirect answer:
-1 - Yes: A clear yes or all gradients of yes (including weaker forms, e.g., maybe yes)
-2 - No: A clear no or all gradients of no.
-3 - Conditional Yes: A yes that only holds if certain conditions are true.
-4 - Neither Yes nor No: A neutral answer that lies in the middle of yes and no.
-5 - Other : The sentence does not match the questions as an answer.
-6 - Lacking Context: Without further context, the answer cannot be clearly categorized.
+1. Yes: A clear yes or all gradients of yes (including weaker forms, e.g., maybe yes)
+2. No: A clear no or all gradients of no.
+3. Conditional Yes: A yes that only holds if certain conditions are true.
+4. Neither Yes nor No: A neutral answer that lies in the middle of yes and no.
+5. Other : The sentence does not match the questions as an answer.
+6. Lacking Context: Without further context, the answer cannot be clearly categorized.
+
+### B. Language Variety and Annotator Demographics
+InQA+ is available in three languages that we provide together with their ISO 639 language codes:
+- English (EN)
+- German (DE)
+- Bavarian (BAR)
+
+The Bavarian translation depicts the dialectal variant of the border area between rural Upper and Lower Bavaria. The translations were carried out by a native speaker of Standard German and Bavarian in her 20s.
+
+### C. Linguistic Situation
+The English and German language as it occurs in the dataset is scripted, as it stems from movie scripts of various genres, e.g., comedy or crime. The Bavarian translation aims at being as natural sounding in the dialect as possible.
+
+### Limitations
+The Bavarian translation reflects the dialect of a single speaker.
 
 
-
-GenIQA Data Statement
+# GenIQA Data Statement
 Data Statement for GenIQA following Bender and Friedman (2018):
 
-A. Curation Rationale
-GenIQA is intended to be used as a multi-lingual training dataset for the Indirect Question Answering task. The data was generated and annotated by gpt-4o-mini and serves the purpose of comparing artificial data with hand-curated data.
+### A. Curation Rationale
+This dataset is a training dataset for Indirect Question Answering (IQA) resource. It contains 1.500 LLM-generated indirect question-answer pairs per language in English, Standard German and Bavarian, a German dialect. The generation was performed with GPT-4o-mini in the time period of March to July 2025.
 
-B. Language Variety
+The label set is the same as for InQA+.
+
+### B. Language Variety 
 GenIQA is available in three languages that we provide together with their ISO 639 language codes:
-    - English (EN)
-    - German (DE)
-    - Bavarian (BAR)
+- English (EN)
+- German (DE)
+- Bavarian (BAR)
 
-C. Speaker Demographic
-The data stems from gpt-4o-mini, which directly generated data in all three languages. Therefore, we have no information about possible speaker origins that provided the original pre-training data that was referenced during the generation process.
-
-D. Annotator Demographic
-The annotations for all languages were carried out by gpt-4o-mini itself.
-
-E. Speech Situation
-As the data was created by gpt-4o-mini, we do not have information about the question-answer pairs and which circumstances the model considered internally during the generation process.
-
-F. Text Characteristics
-The data is annotated with labels that denote the polarity of the indirect answer:
-1 - Yes: A clear yes or all gradients of yes (including weaker forms, e.g., maybe yes)
-2 - No: A clear no or all gradients of no.
-3 - Conditional Yes: A yes that only holds if certain conditions are true.
-4 - Neither Yes nor No: A neutral answer that lies in the middle of yes and no.
-5 - Other : The sentence does not match the questions as an answer.
-6 - Lacking Context: Without further context, the answer cannot be clearly categorized.
+### C. Linguistic Situation
+The language in the dataset is scripted, as the LLM generations do not depict natural text. The generations for English and Standard German are high-quality. The quality of the Bavarian dialect is lacking (please refer to our paper for more details on the generated dialect quality).
