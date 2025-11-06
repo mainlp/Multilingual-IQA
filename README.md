@@ -10,6 +10,7 @@
 
 
 ### Corpus Statistics
+![corp_stats](https://github.com/mainlp/Multilingual-IQA/assets/92130844/f635b03d-3433-4a05-ac07-d9a76a5d21c4)
 
 ### How to use this repository?
 All subfolders containing transcriptions are in zip archives with the password `MaiNLP` so as to prevent potential inclusion in web-scraped datasets (cf. [Jacovi et al., 2023](https://aclanthology.org/2023.emnlp-main.308/)).
