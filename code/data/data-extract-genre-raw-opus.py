@@ -4,6 +4,8 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 import argparse
 
+# opensubtitles data is not included in the repository and can be accessed at https://opus.nlpl.eu/OpenSubtitles/en&de/v2024/OpenSubtitles
+
 parser = argparse.ArgumentParser(
     prog="data-process-raw-opus-german.py", 
     description="A program to parse the raw data of the opensubtitles v2018 corpus to extract questions sorted by genre. This data is used to assign extracted question-answer pairs to their respective genres."
