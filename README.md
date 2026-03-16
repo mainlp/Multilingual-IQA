@@ -27,9 +27,9 @@ All subfolders containing data in `data` and `predictions` are in zip archives w
 - `predictions`: contains the predictions, evaluation report and confusion matrix for each experiment, sorted by model (mBERT, mDeBERTa and XLM-R).
 
 ### Paper
-If you use the data and/or code in this repository, please cite the following:
+If you use the data and/or code in this repository, please cite the following paper (to be published at LREC 2026):
 ```
-@inproceedings{winkler-2026-indirect,
+@inproceedings{winkler-etal-2026-indirect,
   title = "Indirect Question Answering in English, German and Bavarian: A Challenging Task for High- and Low-Resource Languages Alike",
   author = "Winkler, Miriam and Blaschke, Verena and Plank, Barbara",
   year = "2026",
