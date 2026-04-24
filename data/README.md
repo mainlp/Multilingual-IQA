@@ -31,6 +31,21 @@ The English and German language as it occurs in the dataset is scripted, as it s
 ### Limitations
 The Bavarian translation reflects the dialect of a single speaker.
 
+### Majority Class Baseline Scores
+"Yes" (Label 1) is the majority label in all datasets.
+
+Majority Class Baseline InQA+
+- Accuracy: 41.78
+- F1: 9.82
+
+Majority Class Baseline InQA+ REMAPPED
+- Accuracy: 45.89
+- F1: 15.73
+
+Majority Class Baseline InQA+ YESNO
+- Accuracy: 64.66
+- F1: 39.27
+
 
 # GenIQA Data Statement
 Data Statement for GenIQA following Bender and Friedman (2018):
